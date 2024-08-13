@@ -2,30 +2,41 @@ const user1 = document.querySelector('#user1');
 const user2 = document.querySelector('#user2');
 const user1Inc = document.querySelector('#user1Inc');
 const user2Inc = document.querySelector('#user2Inc');
+const reset =  document.querySelector('#reset');
 const h2 = document.querySelector('#h2');
+const playToScore = document.querySelector('#playTo')
 let user1Score = 0;
 let user2Score = 0;
-let winningScore = 5;
-while(user1Score || user2Score !== winningScore){
+let winningScore = 1;
+let gameOver = false;
     user1Inc.addEventListener('click', () => {
-        user1Score += 1;
-        user1.innerText = user1Score;
+        if(!gameOver){
+            user1Score += 1;
+            if(user1Score === winningScore){
+                gameOver = true;
+            }
+            user1.textContent = user1Score;
+        }
     });
     user2Inc.addEventListener('click', () => {
-        user2Score += 1;
-        user2.innerText = user2Score;
+        if(!gameOver){
+            user2Score += 1;
+            if(user2Score === winningScore){
+                gameOver = true;
+            }
+            user2.textContent = user2Score;
+        }
     });
-}
-if(user1Score === winningScore){
-    h2.innerText = "And the winner is Player 1";
-} else {
-    h2.innerText = "And the winner is Player 2";
-}
-const reset =  document.querySelector('#reset');
-reset.addEventListener('click', () => {
+
+    playToScore.addEventListener('change', function(){
+        winningScore = parseInt(this.value);
+        resetFunc();
+    });
+reset.addEventListener('click', resetFunc);
+    function resetFunc() {
+    gameOver = false;
     user1Score = 0;
     user2Score = 0;
-    user1.innerText = '0';
-    user2.innerText = '0';
-    h2.innerText = "And the winner is ..."
-})
+    user1.textContent = '0';
+    user2.textContent = '0';
+}
