@@ -16,6 +16,7 @@ let gameOver = false;
                 gameOver = true;
                 user1.classList.add('winner');
                 user2.classList.add('loser');
+                h2.textContent = "And the Winner is Player 1"
             }
             user1.textContent = user1Score;
         }
@@ -27,6 +28,7 @@ let gameOver = false;
                 gameOver = true;
                 user2.classList.add('winner');
                 user1.classList.add('loser');
+                h2.textContent = "And the Winner is Player 2"
             }
             user2.textContent = user2Score;
         }
@@ -45,4 +47,5 @@ reset.addEventListener('click', resetFunc);
     user2.textContent = '0';
     user1.classList.remove('winner', 'loser');
     user2.classList.remove('winner', 'loser');
+    h2.textContent = "And the Winner is ..."
 }

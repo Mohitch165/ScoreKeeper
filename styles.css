@@ -1,0 +1,195 @@
+body {
+    background: #70ecff;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  h1 {
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+#txt {
+        font-weight: 200;
+        text-align: center;
+        letter-spacing: 2px;
+}
+
+h2 {
+        font-weight: 200;
+        text-align: center;
+        letter-spacing: 2px;
+}
+
+select {
+    border-radius: 4px;
+    text-align: center;
+}
+
+.winner {
+    color: green;
+}
+
+.loser {
+    color: red;
+}
+
+#user1Inc {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 25px 80px;
+    box-shadow: 0 6px #00D4F5;
+    background: #1FE1FF;
+    border-radius: 20px;
+    margin: 20px auto;
+  }
+  
+  #user1Inc:hover {
+    box-shadow: 0 4px #00d4f5;
+    top: 2px;
+  }
+  
+  #user1Inc:active {
+    box-shadow: 0 0 #00d4f5;
+    top: 4px;
+  }
+
+  #user2Inc {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 25px 80px;
+    box-shadow: 0 6px #00D4F5;
+    background: #1FE1FF;
+    border-radius: 20px;
+    margin: 20px auto;
+  }
+  
+  #user2Inc:hover {
+    box-shadow: 0 4px #00d4f5;
+    top: 2px;
+  }
+  
+  #user2Inc:active {
+    box-shadow: 0 0 #00d4f5;
+    top: 4px;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  #reset {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 25px 80px;
+    box-shadow: 0 6px #00D4F5;
+    background: #1FE1FF;
+    border-radius: 20px;
+    margin: 20px auto;
+  }
+  
+  #reset:hover {
+    box-shadow: 0 4px #00d4f5;
+    top: 2px;
+  }
+  
+  #reset:active {
+    box-shadow: 0 0 #00d4f5;
+    top: 4px;
+  }
+
+  .resetB {
+    display: flex;
+    justify-content: center;
+  }
+
+  .drpDwn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .loader {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    border: 10px solid;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    border-top-color: #1FE1FF;
+    border-bottom-color: #1FE1FF;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    animation: loaderAnim 5s linear infinite;
+  }
+
+  @keyframes loaderAnim {
+    0% {
+      transform: rotate(0deg) scale(0.75);
+      border-left-color: #1FE1FF;
+      border-right-color: #1FE1FF;
+    }
+    
+    10% {
+      transform: rotate(90deg) scale(0.5);
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+    
+    20% {
+      transform: rotate(180deg) scale(0.4);
+      border-left-color: transparent;
+        border-right-color: transparent;
+    }
+    
+    30% {
+      transform: rotate(270deg) scale(0.3);
+      border-left-color: transparent;
+        border-right-color: transparent;
+    }
+    
+    50% {
+      transform: rotate(360deg) scale(0.2);
+      border-left-color: transparent;
+        border-right-color: transparent;
+    }
+    
+    70% {
+      transform: rotate(450deg) scale(0.3);
+      border-left-color: transparent;
+        border-right-color: transparent;
+    }
+    
+    80% {
+      transform: rotate(540deg) scale(0.5);
+      border-left-color: transparent;
+        border-right-color: transparent;
+    }
+    90% {
+      transform: rotate(630deg) scale(0.6);
+      border-left-color: transparent;
+        border-right-color: transparent;
+    }
+    
+    100% {
+      transform: rotate(720deg) scale(0.75);
+      border-left-color: #1FE1FF;
+      border-right-color: #1FE1FF;
+    }
+  }

@@ -9,7 +9,8 @@
 </head>
 <body>
     <h1><span id="user1">0</span> & <span id="user2">0</span></h1>
-    <span>Select the Winning Score!</span>
+    <div class="drpDwn">
+    <span id="txt">Select the Winning Score!</span>
     <select name="" id="playTo">
         <option value="3">3</option>
         <option value="5">5</option>
@@ -17,9 +18,14 @@
         <option value="9">9</option>
         <option value="12">12</option>
     </select>
+    </div>
+    <div class="flex-container">
     <button id="user1Inc">Player One +1</button>
-    <button id="user2Inc">Player Two +1</button>
-    <button id="reset">Reset</button>
-    <h2 id="h2">And the winner is ....</h2>
+    <button id="user2Inc">Player Two +1</button> 
+    </div>
+    <div class="resetB">
+        <button id="reset">Reset</button>
+    </div>
+    <h2 id="h2">And the winner is <div class="loader"></div></h2>
 </body>
 </html>
